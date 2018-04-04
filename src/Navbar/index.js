@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 export default class NavbarComp extends Component {
   render() {
@@ -9,11 +9,11 @@ export default class NavbarComp extends Component {
         <Navbar inverse fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <Link to="/">UTN - Paquetes de graduación</Link>
+              <Link to="/">UTN - PaqGrad</Link>
             </Navbar.Brand>
           </Navbar.Header>
-          <Nav>
-            <NavItem eventKey={1} href="#">
+          <Nav pullRight>
+            <NavItem eventKey={1} href="/paqs">
               Paquetes de graduación
             </NavItem>
             <NavItem eventKey={2} href="#">

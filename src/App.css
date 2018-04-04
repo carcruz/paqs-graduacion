@@ -1,3 +1,49 @@
-.main-container {
+.hero-cta {
+  overflow: hidden;
+  margin-top: 49px;
+  height: 350px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+.hero-cta .content {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+
+.login {
   margin-top: 70px;
 }
+
+.paqs {
+  margin-top: 70px;
+}
+
+.paqs h1{
+  margin-bottom: 30px;
+}
+
+.paqs p{
+  margin-bottom: 30px;
+}
+
+.paqs .chairs {
+  height: 800px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-container {
+  margin-top: 49px;
+}
+
