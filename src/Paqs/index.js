@@ -48,9 +48,23 @@ export default class Home extends Component {
                     Licenciatura
                   </Radio>{" "}
                 </FormGroup>
+                <FormGroup>
+                  <ControlLabel>Paquete</ControlLabel>
+                  <br />
+                  <Radio name="radioGroup">
+                    Porta título, cinta, pergamino, foto y llavero.
+                  </Radio>{" "}
+                  <Radio name="radioGroup">
+                    Porta título, cinta, pergamino, foto enmarcada y coctel.
+                  </Radio>{" "}
+                </FormGroup>
               </form>
             </Col>
-            <Col md={6} className="chairs" style={{ backgroundImage: `url("${chairsImg}")` }} />
+            <Col
+              md={6}
+              className="chairs"
+              style={{ backgroundImage: `url("${chairsImg}")` }}
+            />
           </Row>
         </Grid>
       </div>

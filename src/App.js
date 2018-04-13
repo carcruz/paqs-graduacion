@@ -32,6 +32,12 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 );
 
 class App extends Component {
+  paqsSecure() {
+    if (process.env.NODE_ENV === "development") {
+      return <Route path="/paqs" exact component={Paqs} />
+    }
+    return <PrivateRoute path="/paqs" exact component={Paqs} />
+  }
   render() {
     return (
       <Router>
@@ -40,8 +46,9 @@ class App extends Component {
           <div className="main-container">
             <Switch>
               <Route path="/" exact component={Home} />
-              {/* <PrivateRoute path="/paqs" exact component={Paqs} /> */}
-              <Route path="/paqs" exact component={Paqs} />
+              {
+                this.paqsSecure()
+              }
               <Route path="/login" component={Login} />
             </Switch>
           </div>
