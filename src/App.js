@@ -10,6 +10,7 @@ import Nabvar from "./Navbar";
 import Login from "./Login";
 import fakeAuth from "./auth";
 import Home from "./Home";
+import Contacto from "./Contacto";
 import Paqs from './Paqs';
 import "./App.css";
 
@@ -49,6 +50,7 @@ class App extends Component {
               {
                 this.paqsSecure()
               }
+              <Route path="/contactos" component={Contacto} />
               <Route path="/login" component={Login} />
             </Switch>
           </div>

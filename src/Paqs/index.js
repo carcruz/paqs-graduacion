@@ -10,6 +10,7 @@ import {
   Button,
   Radio
 } from "react-bootstrap";
+import carreras from './carreras';
 import chairsImg from "../assets/chairs.jpg";
 
 export default class Home extends Component {
@@ -31,11 +32,11 @@ export default class Home extends Component {
                     componentClass="select"
                     placeholder="Escoja una carrera"
                   >
-                    <option value="select">Contabilidad y finanzas</option>
-                    <option value="select">
-                      Administración y gestión de recursos humanos
-                    </option>
-                    <option value="other">Administración aduanera</option>
+                    {
+                      carreras.map((carrera, i) => {
+                        return <option key={`${i}-${carrera}`} value={carrera}>{carrera}</option>
+                      })
+                    }
                   </FormControl>
                 </FormGroup>
                 <FormGroup>
