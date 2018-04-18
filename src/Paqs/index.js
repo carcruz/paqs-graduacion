@@ -7,6 +7,7 @@ import {
   Row,
   Col,
   Radio,
+  HelpBlock,
   Button
 } from "react-bootstrap";
 import carreras from "./carreras";
@@ -48,10 +49,13 @@ export default class Home extends Component {
           <h4>Paquete</h4>
           <p>{this.state.paq}</p>
           <Button bsStyle="success">Pago online</Button>
+          <HelpBlock>Se generará el pago directamente por medio de targeta VISA o MasterCard</HelpBlock>
           <br />
           <Button bsStyle="primary">Pago en efectvio</Button>
+          <HelpBlock>Se generará el pago y quedará pendiente de pago en nuestras oficinas por 24 horas</HelpBlock>
           <br />
           <Button bsStyle="primary">Pago por medio de abonos</Button>
+          <HelpBlock>Se le acreditará un saldo el cual puede ir cancelando por meido de abonos. Puede revisar nuestra poílica de abonos <a target="_blanck" href="https://s3-us-west-2.amazonaws.com/carcruzcast-static/utn-paqs/Politica+de+Abonos+-+Paquetes+de+Graduacio%CC%81n.pdf">aquí</a></HelpBlock>
         </div>
       );
     }
