@@ -5,13 +5,13 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
-// import { Jumbotron } from "react-bootstrap";
 import Nabvar from "./Navbar";
 import Login from "./Login";
 import fakeAuth from "./auth";
 import Home from "./Home";
 import Contacto from "./Contacto";
 import Paqs from './Paqs';
+import Footer from "./shareComponents/Footer";
 import "./App.css";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -54,6 +54,7 @@ class App extends Component {
               <Route path="/login" component={Login} />
             </Switch>
           </div>
+          <Footer />
         </div>
       </Router>
     );

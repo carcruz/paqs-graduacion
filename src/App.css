@@ -35,7 +35,7 @@
 }
 
 .paqs .chairs {
-  height: 800px;
+  height: 900px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -47,3 +47,16 @@
   margin-top: 49px;
 }
 
+.preview {
+  margin-top: 40px;
+  padding: 5px 20px;
+  background: #eee;
+}
+
+.preview button {
+  margin-bottom: 15px;
+}
+
+footer {
+  height: 100px;
+}
